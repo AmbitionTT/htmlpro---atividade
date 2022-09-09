@@ -1,0 +1,258 @@
+:root{
+    --cor-fonte: #181717;
+    --cor-fonte2: #606060;
+    --cor-fonte3: #2429AF;
+    --bg-body: #ffffff;
+}
+
+.container{
+    max-width: auto;
+    margin: 20px 80px;
+    }
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Sans', sans-serif;
+    background-color: var(--bg-body);
+
+    transition: background 0.2s linear;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+}
+
+.iniciais h3{
+    font-size: 30px;
+    color: var(--cor-fonte1);
+}
+
+.botões{
+    color: var(--cor-fonte1);
+    justify-content: space-between;
+    display:flex;
+    align-items: center;
+}
+
+.btn{
+    text-decoration: none;
+    padding: 5px 10px 5px 10px;
+}
+
+.container-1 {
+    display: flex;
+    margin: 20px 80px;
+}
+
+.apresentação{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+
+.apresentação p{
+    width: 575px;
+    height: 359px;
+    margin-left: 252px;
+    margin-top: 45px;
+    font-size: 18px;
+    color: var(--cor-fonte1);
+}
+
+.apresentação h2{
+    width: 575px;
+    height: 209px;
+    font-size: 40px;
+    justify-content: left;
+}
+
+.projeto-1{
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    max-width: 320px;
+    margin: 20px 80px
+    }
+    
+    .projeto-1 h2{
+        width: 480px;
+        height: 50px;
+        text-align: left;
+        font-weight: bolder;
+    }
+
+
+    .projeto-1 h3{
+        width: 480px;
+        height: 50px;
+        text-align: left;
+        font-size: 18px;
+        font-weight: bolder;
+        max-width: 540px;
+        color: var(--cor-fonte3);
+    }
+    
+    .projeto-1 p{
+        width: 575px;
+        height: 100px;
+        max-width: 500px;
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .btnp{
+        color: var(--cor-fonte3);
+        padding: 5px 10px 5px 10px;
+        }   
+    
+    .projeto-1 img{
+        width: 421px;
+        margin-left: 60px;
+        justify-content: right;
+    }
+
+.projeto-2{
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    max-width: 320px;
+    margin: 20px 80px
+    }
+    
+    .projeto-2 h2{
+        width: 480px;
+        height: 50px;
+        text-align: left;
+        font-weight: bolder;
+    }
+    
+    .projeto-2 p{
+        width: 575px;
+        max-width: 540px;
+        height: 100px;
+        text-align: left;
+    }
+    
+    .projeto-2 img{
+        width: 421px;
+        margin-left: 78px;
+        justify-content: right;
+    }
+
+.projeto-3{
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    max-width: 320px;
+    margin: 20px 80px
+    }
+    
+    .projeto-3 h2{
+        width: 480px;
+        height: 50px;
+        text-align: left;
+        font-weight: bolder;
+    }
+    
+    .projeto-3 p{
+        width: 575px;
+        height: 100px;
+        text-align: left;
+    }
+    
+    .projeto-3 img{
+        width: 421px;
+        max-width: 540px;
+        margin-left: 78px;
+        justify-content: right;
+    }
+
+.assinatura h3{
+
+    font-size: 15px;
+    color: var(--cor-fonte3);
+}
+  
+.footer{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;    
+    margin: 50px 80px;
+}
+
+.botõesf{
+    color: var(--cor-fonte1);
+    }
+        
+.btnf{
+    text-decoration: none;
+    padding: 5px 10px 5px 10px;
+    }
+
+/*tema escuro*/
+body.active {
+    background-color: #232c35;
+    color: #ffffff;
+}
+
+body.active a{
+    color: #ffffff;
+}
+
+.checkbox {
+    position: absolute;
+    margin-top: 5px;
+    cursor: pointer;
+    opacity: 0;
+
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.label{
+    background-color: #232c35;
+    border-radius: 50px;
+    cursor: pointer;
+
+    margin-top: 5px;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 50px;
+    height: 25px;
+}
+
+.label .ball{
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 2px;
+
+    height: 20px;
+    width: 20px;
+
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label{
+    background-color: #ffffff;
+}
+
+.checkbox:checked + .label .ball{
+    transform: translateX(27px);
+    background-color: #232c35;
+}
+
+.fa-moon{
+    color: #f1c40f;
+    margin-left: 2px;
+}
+
+.fa-sun{
+    color: #f39c12;
+    margin-right: 2px;
+}
